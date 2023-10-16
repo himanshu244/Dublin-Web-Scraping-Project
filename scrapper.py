@@ -67,8 +67,8 @@ def move_downloaded_file():
 	downloaded_files = os.listdir(download_dir)
 	latest_file = max(downloaded_files, key=lambda x: os.path.getctime(os.path.join(download_dir, x)))
 	
-	aws_access_key_id = "AKIA2JDKJ25KWSIOA6OB"
-	aws_secret_access_key = "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"
+	aws_access_key_id = <AWS_ACCESS_KEY_ID>
+	aws_secret_access_key = <AWS_SECRET_ACCESS_KEY>
 	s3_bucket_name = "pdfcrashbucket"
 	s3_object_key = "inbox/scanned/Dublin--25-"+str(round(time.time()*1000))+latest_file
 	local_file_path = download_dir+"\\"+latest_file
