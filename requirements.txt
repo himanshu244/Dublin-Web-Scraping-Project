@@ -1,0 +1,7 @@
+webdriver_manager
+selenium
+pyautogui
+boto3
+
+cd desktop/scrapper
+ssh ubuntu@3.144.20.190 -i OhioScrapers.pem
